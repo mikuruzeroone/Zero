@@ -1,0 +1,8 @@
+#!/system/bin/sh
+set -u
+
+DIR="/sdcard/AXPE"
+
+cd "$DIR" || exit 1
+
+exec sh "$DIR/axpe.sh" "$@"
